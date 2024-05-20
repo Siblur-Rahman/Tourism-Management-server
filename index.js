@@ -29,9 +29,6 @@ async function run() {
     const userCollect = client.db('touristsSpot').collection('user');
     const countriesCollect = client.db('touristsSpot').collection('countries')
 
-
-
-
     app.post('/TouristsSpot', async(req, res) =>{
       const newTouristsSpot = req.body;
       console.log('newTouristsSpot', newTouristsSpot);
