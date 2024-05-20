@@ -58,10 +58,7 @@ async function run() {
       res.send(result)
     })
     app.get('/countries', async(req, res) =>{
-      // const country_Name = req.params.country_Name;
-      // const query = {country_Name};
       const cursor = countriesCollect.find()
-
       const result = await cursor.toArray();
       res.send(result)
     })
